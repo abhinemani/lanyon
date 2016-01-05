@@ -1,0 +1,38 @@
+---
+layout: page
+title: "Roadmap"
+---
+
+<div class="page">
+<p>The City of Los Angeles benefits from the fact that in the past few years, other cities have experimented with open data, both opening up various datasets and engaging their communities to gauge response.</p>
+
+<p>Based on a robust analysis of the Open Data Ecosystem internationally, the Mayor’s Office has identified roughly 140 datasets (i.e. 2-5 sets per department) that are considered High Value. This list gives us insight as we explore what data sets are next for publication. The Mayor’s Office will be working with the department Open Data Coordinators for feedback on this list to finalize the Open Data Roadmap and seek to release all data identified within it by end of Q2.</p>
+
+<p><strong>Please share your feedback by emailing mayor.opendata@lacity.org or on twitter with #datala.</strong></p>
+
+   <table  id="datasets"  class="responsive">
+	   <tr>
+		   <th>Data</th>
+		   <th>Description</th>
+		   <th>Department</th>
+	   </tr>
+   </table>
+</div>
+   <script type="text/javascript">
+      var public_spreadsheet_url = 'https://docs.google.com/spreadsheet/pub?hl=en_US&hl=en_US&key=1JiLBTZ4qmldNt0493WICi6O6ZPhUnoMPo9_90y3sI0Q&output=html';
+      $(document).ready( function() {
+        Tabletop.init( { key: public_spreadsheet_url,
+                         callback: showInfo,
+                         debug: true } )
+      })
+        
+      function showInfo(data, tabletop) {
+        $.each( tabletop.sheets("datasets").all(), function(i, datasets) {
+          var cat_li = $('<tr><td>' + datasets.dataname + '</td>')
+            cat_li.append("<td>" + datasets.description + "</td>");
+          cat_li.append("<td>" + datasets.department + "</td></tr>");
+          cat_li.appendTo("#datasets");
+        })
+        
+      }
+    </script>

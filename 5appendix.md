@@ -5,65 +5,47 @@ title: "Appendix"
 
 ## Definitions
 
-Term	Definition
-Dataset	Contents of a single database table, worksheet or defined view; data is provided as a single combination of unique rows (or records) and corresponding columns (or fields) describing that row
-
-Example - Database: A database may contain several data tables - each data table constitutes a dataset. However, you could also create new datasets by combining data from different tables into a new table.
-Data Schema or Standard	Specification that defines the structure of the data (i.e. required data elements and types and supporting definitions)
-
-Data source	Technology or system that stores data, including databases, named spreadsheets, information systems, business applications, etc.
-ETL	Extract, Transform, Load -  three database functions that are combined into one tool to pull data out of one database and place it into another.
-
-* Extract - process of reading data from a database.
-* Transform - process of converting the extracted data from its previous form into the form it needs to be in so that it can be placed into another database.  (rules, lookup tables, combining with other data)
-* Load - process of writing the data into the target database.
-
-Geospatial data	Data related to the position of things in the real world, including boundaries or locations
-Metadata 	Descriptive information about a dataset
-Tabular 	Data that is presented in columns or tables
-Taxonomy or Category	Methodology by which items or datasets are classified or grouped under a similar theme or topic
+* **Dataset**: Contents of a single database table, worksheet or defined view; data is provided as a single combination of unique rows (or records) and corresponding columns (or fields) describing that row
+* **Database**: A database may contain several data tables - each data table constitutes a dataset. However, you could also create new datasets by combining data from different tables into a new table.
+* **Data Schema or Standard**: Specification that defines the structure of the data (i.e. required data elements and types and supporting definitions)
+* **Data source**: Technology or system that stores data, including databases, named spreadsheets, information systems, business applications, etc.
+* **ETL**: Extract, Transform, Load: three database functions that are combined into one tool to pull data out of one database and place it into another.
+	* *Extract* - process of reading data from a database.
+	* *Transform* - process of converting the extracted data from its previous form into the form it needs to be in so that it can be placed into another database.  (rules, lookup tables, combining with other data)
+	* *Load* - process of writing the data into the target database.
+* **Geospatial data**: Data related to the position of things in the real world, including boundaries or locations
+* **Metadata**: Descriptive information about a dataset
+* **Tabular**: Data that is presented in columns or tables
+* **Taxonomy or Category**: Methodology by which items or datasets are classified or grouped under a similar theme or topic
 
 ## Draft Data Checklist Template
 
-Field	Example
-
-Department/Division	
-Dataset name	
-Brief description of data	
-Data Steward (Business knowledge) - Name	
-Data Steward (Business knowledge) - Email	
-Data source
-What information system or database contains the data? 	
-Start date:
-MM/DD/YYYY	
-End date: 
-MM/DD/YYYY. 
-If the data is still being updated, use "Current".	
-Geographic coverage	
-Geographic granularity:
-address, census tract, county, zip code	
-Update Frequency:
-Daily, monthly, quarterly, annually	
-Collection Frequency:
-Daily, monthly, quarterly, annually	
-Existing publication:
-Y/N	
-Link to existing publication
-(If exists)	
-Priority/value:
-High, Medium, or Low	
-Priority/value comments	
-Technical challenges	
-Data Classification:
-PUBLIC; PROTECTED; or SENSITIVE.	
-Protected - Details
-(If selected)	
-Sensitive - Details:
-Level 1, Level 2, Level 3
-(If selected)	
-Data Quality:
-High, Medium, or Low	
-Data Quality - Details	
+* Department/Division	
+* Dataset name	
+* Brief description of data	
+* Data Steward (Business knowledge) - Name	
+* Data Steward (Business knowledge) - Email	
+* Data source
+	- What information system or database contains the data? 
+* Data Collection Mechanism
+	- Through what process (e.g. calls, inspections, etc) was this data collected?
+* What information system or database contains the data? 	
+* Start date: (MM/DD/YYYY)
+* End date: (MM/DD/YYYY; if the data is still being updated, use "Current")
+* Geographic coverage	
+* Geographic granularity: (address, census tract, county, zip code)
+* Update Frequency: (Daily, monthly, quarterly, annually)
+* Collection Frequency: (Daily, monthly, quarterly, annually)
+* Existing publication: (Y/N)	
+* Link to existing publication (If exists)	
+* Priority/value: (High, Medium, or Low)
+* Priority/value comments	
+* Technical challenges	
+* Data Classification: (PUBLIC; PROTECTED; or SENSITIVE.)
+* Protected - Details (If selected)	
+* Sensitive - Details: (Level 1, Level 2, Level 3; if selected)	
+* Data Quality: (High, Medium, or Low)
+* Data Quality - Details	
 
 ## Security Considerations
 When considering a dataset for publication on data.lacity.org, it’s review process will differ based on which security level it falls into:

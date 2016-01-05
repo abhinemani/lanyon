@@ -1,7 +1,7 @@
 # Dependencies
 markdown:            redcarpet
 redcarpet:
-    extensions: [with_toc_data]
+    extensions: [with_toc_data, footnotes]
 highlighter:         pygments
 
 # Permalinks
@@ -15,7 +15,7 @@ title:               LA Open Data
 tagline:             'Policy and Playbook'
 description:         'Draft Open Data Policy and Playbook from the Los Angeles Data Team'
 url:                 http://datala.github.com
-baseurl:             "/od-policy/"
+baseurl:             /od-policy/
 paginate:            5
 
 # About/contact
